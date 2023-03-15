@@ -1,14 +1,17 @@
+import { ThemeProvider } from 'styled-components';
 import { Button } from './components/Button';
+import { GlobalStyle } from './styles/global';
+import { defaultTheme } from './styles/themes/default';
 
 export function App() {
   return (
-    <div>
-      <h1>Timer</h1>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
 
-      <Button variant='primary' />
-      <Button variant='secondary' />
-      <Button variant='success' />
-      <Button variant='danger' />
-    </div>
+      <Button variant="primary" />
+      <Button variant="secondary" />
+      <Button variant="success" />
+      <Button variant="danger" />
+    </ThemeProvider>
   );
 }
