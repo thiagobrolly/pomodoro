@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export type ButtonVariant = 'primary' | 'secondary' | 'success' | 'danger'
+export type ButtonVariant = 'primary' | 'secondary' | 'success' | 'danger';
 
 interface ButtonProps {
   variant: ButtonVariant;
