@@ -1,9 +1,5 @@
 import { ButtonContainer } from "./styles";
 
-// export type ButtonTypes = {
-
-// }
-
 interface ButtonProps{
   variant?: 'primary' | 'secondary' | 'success' | 'danger'
 }
